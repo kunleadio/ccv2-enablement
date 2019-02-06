@@ -1,0 +1,86 @@
+{
+  "commerceSuiteVersion": "1811.1",
+  "extensions": [],
+  "useConfig": {
+     "properties": [
+            { "location": "/config/local.properties" }
+        ],
+    "extensions": {
+      "location": "/config/localextensions.xml",
+      "exclude":  []
+    },
+    "aspects": [
+      {
+        "name": "backoffice",
+	"properties": [],
+        "webapps": [
+          {
+            "name": "hac",
+            "contextPath": "/hac"
+          },
+          {
+            "name": "mediaweb",
+            "contextPath": "/medias"
+          },
+          {
+            "name": "backoffice",
+            "contextPath": ""
+          }
+        ]
+      },
+      {
+        "name": "accstorefront",
+        "properties": [],
+	"webapps": [
+          {
+            "name": "mediaweb",
+            "contextPath": "/medias"
+          },
+          {
+            "name": "mycustomstorefront",
+            "contextPath": ""
+          },
+          {
+            "name": "acceleratorservices",
+            "contextPath": "/acceleratorservices"
+          }
+        ]
+      },
+      {
+        "name": "backgroundProcessing",
+        "properties": [],
+        "webapps": [
+          {
+            "name": "hac",
+            "contextPath": ""
+          },
+          {
+            "name": "mediaweb",
+            "contextPath": "/medias"
+          }
+        ]
+      }
+    ],
+    "tests": {
+      "extensions": [
+        "customerticketingaddon",
+        "yacceleratorstorefront"
+      ],
+      "annotations": [
+        "UnitTests",
+        "IntegrationTests"
+      ],
+      "packages": [
+        "de.hybris.infra.*"
+      ]
+    },
+    "webTests": {
+      "extensions": [
+        "yacceleratorstorefront"
+      ],
+      "excludedPackages": [
+        "de.hybris.platform.*"
+      ]
+    }
+  }
+}
