@@ -38,7 +38,7 @@
           },
           {
             "name": "trainingstorefront",
-            "contextPath": ""
+            "contextPath": "/trainingstorefront"
           },
           {
             "name": "acceleratorservices",
