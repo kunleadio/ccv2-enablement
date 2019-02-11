@@ -1,87 +1,65 @@
 {
-  "commerceSuiteVersion": "1811.1",
-  "extensions": [],
-  "useConfig": {
-     "properties": [],
-    "extensions": {
-      "location": "/config/localextensions.xml",
-      "exclude":  []
+    "commerceSuiteVersion": "1811.1",
+    "extensions": [],
+	"useConfig": {
+		"properties": [],
+		"extensions": {
+			 "location": "/config/localextensions.xml",
+			 "exclude":  []
+		}
     },
-    "aspects": [
-      {
-        "name": "backoffice",
-	"properties": [],
-        "webapps": [
-          {
-            "name": "hac",
-            "contextPath": "/hac"
-          },
-          {
-            "name": "mediaweb",
-            "contextPath": "/medias"
-          },
-          {
-            "name": "backoffice",
-            "contextPath": ""
-          }
-        ]
-      },
-      {
-        "name": "accstorefront",
-        "properties": [],
-	"webapps": [
-          {
-            "name": "mediaweb",
-            "contextPath": "/medias"
-          },
-          {
-            "name": "trainingstorefront",
-            "contextPath": "/trainingstorefront"
-          },
- 	  {
-            "name": "yacceleratorstorefront",
-            "contextPath": "/yacceleratorstorefront"
-          },
-          {
-            "name": "acceleratorservices",
-            "contextPath": "/acceleratorservices"
-          }
-        ]
-      },
-      {
-        "name": "backgroundProcessing",
-        "properties": [],
-        "webapps": [
-          {
-            "name": "hac",
-            "contextPath": ""
-          },
-          {
-            "name": "mediaweb",
-            "contextPath": "/medias"
-          }
-        ]
-      }
-    ],
-    "tests": {
-      "extensions": [
-        "yacceleratorstorefront"
-      ],
-      "annotations": [
-        "UnitTests",
-        "IntegrationTests"
-      ],
-      "packages": [
-        "de.hybris.infra.*"
-      ]
-    },
-    "webTests": {
-      "extensions": [
-        "yacceleratorstorefront"
-      ],
-      "excludedPackages": [
-        "de.hybris.platform.*"
-      ]
-    }
-  }
+	"aspects": [
+		{
+			"name": "backoffice",
+			"webapps": [
+				{
+					"name": "hac",
+					"contextPath": "/hac"
+				},
+				{
+					"name": "mediaweb",
+					"contextPath": "/medias"
+				},
+				{
+					"name": "backoffice",
+					"contextPath": ""
+				}
+			]
+		},
+		{
+			"name": "accstorefront",
+			"webapps": [
+				{
+					"name": "mediaweb",
+					"contextPath": "/medias"
+				},
+				{
+					"name": "yacceleratorstorefront",
+					"contextPath": "/yacceleratorstorefront"
+				},
+				{
+					"name": "acceleratorservices",
+					"contextPath": "/acceleratorservices"
+				},
+				{
+					"name": "trainingstorefront",
+					"contextPath": ""
+				}
+			]
+		},
+		{
+			"name": "backgroundProcessing",
+			"properties": [],
+			"webapps": [
+				{
+					"name": "hac",
+					"contextPath": ""
+				},
+				{
+					"name": "mediaweb",
+					"contextPath": "/medias"
+				}
+			]
+		}
+	]
 }
