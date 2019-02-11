@@ -1,6 +1,11 @@
 {
   "commerceSuiteVersion": "1811.1",
-  "extensions": [],
+  "extensions": [
+ 	"modeltacceleratorservices",
+        "electronicsstore",
+        "yacceleratorstorefront",
+        "backoffice"
+],
   "useConfig": {
      "properties": [
             { "location": "/config/local.properties" }
@@ -39,6 +44,10 @@
           {
             "name": "trainingstorefront",
             "contextPath": "/trainingstorefront"
+          },
+ 	  {
+            "name": "yacceleratorstorefront",
+            "contextPath": "/yacceleratorstorefront"
           },
           {
             "name": "acceleratorservices",
