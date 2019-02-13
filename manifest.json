@@ -44,7 +44,12 @@
 				{
 					"name": "trainingstorefront",
 					"contextPath": ""
-				}
+				},
+				{
+                                        "name": "hac",
+                                        "contextPath": "/hac"
+                                }
+
 			]
 		},
 		{
